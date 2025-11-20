@@ -1,2 +1,1 @@
-# ClauseEase_app
-AI based Contract Language Simplifier
+# ClauseEase: AI based Contract Language Simplifier
