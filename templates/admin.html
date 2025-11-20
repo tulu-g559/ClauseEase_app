@@ -1,0 +1,102 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container mt-4">
+  <div class="card p-4">
+    <h2 style="color: black;">Admin Panel Analyses</h2>
+    <p class="small text-muted">List of all uploaded analyses across users.</p>
+    {% if analyses and analyses|length > 0 %}
+      <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>Filename</th>
+                <th>Uploaded At</th>
+                <th class="simp-col">Simplification</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for a in analyses %}
+            <tr>
+                <td>{{ a.user_email }}</td>
+                <td class="filename-col">{{ a.filename }}</td>
+                <td class="uploaded-col">{{ a.uploaded_at }}</td>
+                <td class="simp-col">{{ a.simplification_level or '' }}</td>
+                <td>
+                <a class="btn btn-sm btn-primary" href="{{ url_for('admin_download_analysis', user_email=a.user_email, analysis_id=a.id) }}">Download PDF</a>
+                <p></p>
+                <a class="btn btn-sm btn-secondary" href="{{ url_for('admin_download_analysis_json', user_email=a.user_email, analysis_id=a.id) }}">Download JSON</a>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+
+      </table>
+    {% else %}
+      <p>No analyses found.</p>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+.card { overflow: visible; }
+
+.table td, .table th {
+  white-space: normal;        /* allow wrapping */
+  word-wrap: break-word;
+  word-break: break-word;
+  vertical-align: middle;
+}
+
+/* make filename and uploaded_at columns constrained with ellipsis */
+.table td.filename-col,
+.table th.filename-col {
+  max-width: 360px;           /* tweak as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* uploaded_at often gets long iso timestamps; truncate it sensibly */
+.table td.uploaded-col,
+.table th.uploaded-col {
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.95rem;
+}
+
+/* make simplification column a bit wider */
+.table td.simp-col,
+.table th.simp-col {
+  max-width: 500px;      /* adjust as needed */
+  white-space: nowrap;   /* keep 'Intermediate' in one line */
+  text-align: center;    /* optional – makes it look neat */
+}
+
+
+/* add breathing room on the right so fixed buttons don't cover content */
+body, .container {
+  padding-right: 90px;   /* match this to your fixed buttons width + margin */
+}
+
+/* small screens: reduce padding-right less aggressively */
+@media (max-width: 768px) {
+  body, .container { padding-right: 20px; }
+  .table td.filename-col { max-width: 200px; }
+  .table td.uploaded-col { max-width: 140px; }
+}
+
+.container {
+  max-width: 100% !important; /* allows full screen width */
+  padding-right: 100px;       /* keep space for your fixed buttons */
+  padding-left: 20px;
+}
+
+.card {
+  width: 100%;
+}
+</style>
+
+{% endblock %}

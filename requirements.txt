@@ -1,0 +1,13 @@
+Flask
+PyMuPDF
+python-docx
+nltk
+spacy
+numpy
+transformers
+torch
+firebase-admin
+reportlab
+gunicorn
+werkzeug
+requests

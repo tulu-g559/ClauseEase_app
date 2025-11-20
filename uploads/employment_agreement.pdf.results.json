@@ -1,0 +1,417 @@
+{
+  "results": [
+    {
+      "index": 1,
+      "raw": "EMPLOYMENT AGREEMENT This EMPLOYMENT AGREEMENT made in ……….. on this ………….. Between …………………….. (hereinafter referred to as \"Employer\"), having its registered office at ………………………….. IN AND …………….. S/O………. (Father), residing at ………………. hereinafter referred to as the \"Employee\" (The Company and the Employee are hereinafter jointly referred to as the \"Parties\" and individually as a \"Party\"). NOW THIS AGREEMENT WITNESSETH AND IT IS HEREBY AGREED BY AND BETWEEN THE PARTIES HERETO AS UNDER: 1. DESIGNATION The Employee is hereby appointed and shall hold office as ___________ of the Company on the terms and conditions contained hereunder. 2. PROBATIONARY PERIOD The probationary period will be of ___________ and the company will evaluate the new hire's qualifications, skills and \"fit\" within our Company. The given time frame does not constitute an obligation on the part of the Company to retain the employee until the end of the probationary period. This period involves special orientation activities plus closer and more frequent performance evaluations than that given to regular employees. During this time or at any time of employment, the Company may terminate the working relationship without cause with advance notice, except as prescribed by law. At the end of the probationary period, if the employee has not been available to work the full probationary period or work performance has not met expectations, the length of the probation may be extended by the Company at its sole discretion. Upon satisfactory completion of the probationary period, the employee will achieve a regular or part time employee status and as such, will be eligible for most of our benefits (exceptions would be benefits that have a specific waiting period). The employee will now be expected to meet and maintain Company standards for job performance and behavior. 3. PLACE OF WORK .1",
+      "cleaned": "EMPLOYMENT AGREEMENT This EMPLOYMENT AGREEMENT made in ……….. on this ………….. Between …………………….. (hereinafter referred to as \"Employer\"), having its registered office at ………………………….. IN AND …………….. S/O………. (Father), residing at ………………. hereinafter referred to as the \"Employee\" (The Company and the Employee are hereinafter jointly referred to as the \"Parties\" and individually as a \"Party\"). NOW THIS AGREEMENT WITNESSETH AND IT IS HEREBY AGREED BY AND BETWEEN THE PARTIES HERETO AS UNDER: 1. DESIGNATION The Employee is hereby appointed and shall hold office as ___________ of the Company on the terms and conditions contained hereunder. 2. PROBATIONARY PERIOD The probationary period will be of ___________ and the company will evaluate the new hire's qualifications, skills and \"fit\" within our Company. The given time frame does not constitute an obligation on the part of the Company to retain the employee until the end of the probationary period. This period involves special orientation activities plus closer and more frequent performance evaluations than that given to regular employees. During this time or at any time of employment, the Company may terminate the working relationship without cause with advance notice, except as prescribed by law. At the end of the probationary period, if the employee has not been available to work the full probationary period or work performance has not met expectations, the length of the probation may be extended by the Company at its sole discretion. Upon satisfactory completion of the probationary period, the employee will achieve a regular or part time employee status and as such, will be eligible for most of our benefits (exceptions would be benefits that have a specific waiting period). The employee will now be expected to meet and maintain Company standards for job performance and behavior. 3. PLACE OF WORK .1",
+      "type": "Confidentiality",
+      "confidence": 0.4767265319824219,
+      "terms": {},
+      "simple": "(called \"Employer\"), having its registered office at ................................\n(Father), residing at ...................\nNOW THIS AGREEMENT WITNESSETH AND IT IS HEREBY AGREED.\nSimplify and shorten further: 2.\nCompany.\nSimplify and shorten further: simplify and shorten: This period involves special orientation activities plus closer.\nProbationary work.\nSimplify and shorten further: The employee will now be expected to meet and maintain Company standards for.\nSimplify and shorten further: simplify and shorten: PLACE OF WORK.1.\nThe given time frame does not constitute an obligation on the part of the Company to retain the employee until the end of the probationary period.\nThis period involves special orientation activities plus closer and more frequent performance evaluations than that given to regular employees.\nDuring this time or at any time of employment, the Company may terminate the working relationship without cause with advance notice, except as prescribed by law.\nAt the end of the probationary period, if the employee has not been available to work the full probationary period or work performance has not met expectations, the length of the probation may be extended by the Company at its sole discretion.\nUpon satisfactory completion of the probationary period, the employee will achieve a regular or part time employee status and as such, will be eligible for most of our benefits (exceptions would be benefits that have a specific waiting period).\nThe employee will now be expected to meet and maintain Company standards for job performance and behavior.\n3.\nPLACE OF WORK .1."
+    },
+    {
+      "index": 2,
+      "raw": "3.1 The Employee will be stationed in the Employer's offices currently located in _________, but the Company shall be entitled to transfer the Employee's services to any of the branches, sister concerns, which are presently operating or that which may be set up in future, in India or outside India. .2",
+      "cleaned": "3.1 The Employee will be stationed in the Employer's offices currently located in _________, but the Company shall be entitled to transfer the Employee's services to any of the branches, sister concerns, which are presently operating or that which may be set up in future, in India or outside India. .2",
+      "type": "Confidentiality",
+      "confidence": 0.6638787984848022,
+      "terms": {},
+      "simple": "India is a country with a long history of adolescence.\n.2."
+    },
+    {
+      "index": 3,
+      "raw": "3.2 The Employee may be required to work at premises other than the Company's premises from time to time. _____________ ___________ ( DIRECTOR) (Post) (Name of the Company) EMPLOYEE 4. DUTIES AND POWERS .1",
+      "cleaned": "3.2 The Employee may be required to work at premises other than the Company's premises from time to time. _____________ ___________ ( DIRECTOR) (Post) (Name of the Company) EMPLOYEE 4. DUTIES AND POWERS .1",
+      "type": "Confidentiality",
+      "confidence": 0.6002956628799438,
+      "terms": {},
+      "simple": "The employee may be required to work at premises other than the Company's premises from time to.\n_____________ ___________ ( DIRECTOR) (Post) (Name of the Company) EMPLOYEE 4.\nDUTIES AND POWERS .1."
+    },
+    {
+      "index": 4,
+      "raw": "4.1 The Employee shall devote his / her efforts and his / her full business time and attention to the performance of such duties and responsibilities as may be assigned to him/her from time to time by the Director of the Company and in this regard follow all instructions issued or given by the Director of the Company or by a Manager immediately Senior to the Employee or by the Board of Directors of the Company. .2",
+      "cleaned": "4.1 The Employee shall devote his / her efforts and his / her full business time and attention to the performance of such duties and responsibilities as may be assigned to him/her from time to time by the Director of the Company and in this regard follow all instructions issued or given by the Director of the Company or by a Manager immediately Senior to the Employee or by the Board of Directors of the Company. .2",
+      "type": "Confidentiality",
+      "confidence": 0.6626246571540833,
+      "terms": {},
+      "simple": "4.1 The Employee must devote his / her efforts and his / her full business time and attention to the performance of such duties and.\n.2."
+    },
+    {
+      "index": 5,
+      "raw": "4.2 The Employee shall maintain proper dignity of the company's office and deal the matter with sobriety. .3",
+      "cleaned": "4.2 The Employee shall maintain proper dignity of the company's office and deal the matter with sobriety. .3",
+      "type": "Confidentiality",
+      "confidence": 0.7593110203742981,
+      "terms": {},
+      "simple": "Simplify and shorten further:.\n.3."
+    },
+    {
+      "index": 6,
+      "raw": "4.3 In performing his /her duties as_____________of the Company the Employee shall adhere to all applicable laws and regulations as well as follow the Company's policies and instructions. .4",
+      "cleaned": "4.3 In performing his /her duties as_____________of the Company the Employee shall adhere to all applicable laws and regulations as well as follow the Company's policies and instructions. .4",
+      "type": "Confidentiality",
+      "confidence": 0.673202633857727,
+      "terms": {},
+      "simple": "Responsibilities of the Company.\n.4."
+    },
+    {
+      "index": 7,
+      "raw": "4.4 The Employee shall devote his/her best efforts and all of his/her business time to the performance of his/her duties under this Employment Agreement and shall perform them faithfully, diligently and competently, in a manner consistent with the policies of the Company as determined from time to time by the Director of the Company and shall directly report to the immediate Head or Senior in hierarchy. The Employee whilst working with the Company shall not, except with the prior written consent of the Board of Directors engage in activities outside the scope of his/her employment and shall fulfill his/her responsibilities or duties under this Employment Agreement. .5",
+      "cleaned": "4.4 The Employee shall devote his/her best efforts and all of his/her business time to the performance of his/her duties under this Employment Agreement and shall perform them faithfully, diligently and competently, in a manner consistent with the policies of the Company as determined from time to time by the Director of the Company and shall directly report to the immediate Head or Senior in hierarchy. The Employee whilst working with the Company shall not, except with the prior written consent of the Board of Directors engage in activities outside the scope of his/her employment and shall fulfill his/her responsibilities or duties under this Employment Agreement. .5",
+      "type": "Confidentiality",
+      "confidence": 0.6491241455078125,
+      "terms": {},
+      "simple": "4.4 The Employee must devote his/her best efforts and all of his/her business time to the performance of his/her duties under this Employment Agreement and must perform them faithfully, diligently and competently, in.\nThe Employee whilst working with the Company must not, except with the prior written consent of the Board of Directors engage in activities outside the scope of his/her employment and must fulfill his/her responsibilities or duties under this Employment Agreement.\n.5."
+    },
+    {
+      "index": 8,
+      "raw": "4.5 That during the Employment period, the employee without consent of the company in writing shall not sign on any documents or commit on behalf of the company without mutual consent. If the employee violates the same, then consequently in case if any liability arises then the company shall not be responsible for it in any circumstances. .6",
+      "cleaned": "4.5 That during the Employment period, the employee without consent of the company in writing shall not sign on any documents or commit on behalf of the company without mutual consent. If the employee violates the same, then consequently in case if any liability arises then the company shall not be responsible for it in any circumstances. .6",
+      "type": "Dispute Resolution",
+      "confidence": 0.6885296106338501,
+      "terms": {
+        "liability": "Legal responsibility for one’s acts or omissions."
+      },
+      "simple": "The employee must not sign on any documents or commit on behalf of the company without mutual consent.\nIf the employee violates the same, then consequently in case if any liability arises then the company must not be responsible for it in any circumstances.\n.6."
+    },
+    {
+      "index": 9,
+      "raw": "4.6 As ______________of the Company the Employee shall be responsible for the day-to-day management to immediate Head or Senior in hierarchy. .7",
+      "cleaned": "4.6 As ______________of the Company the Employee shall be responsible for the day-to-day management to immediate Head or Senior in hierarchy. .7",
+      "type": "Confidentiality",
+      "confidence": 0.6467621326446533,
+      "terms": {},
+      "simple": "Simplify and shorten further: simplify and shorten further:.\n.7."
+    },
+    {
+      "index": 10,
+      "raw": "4.7 That the employee services will be governed by the rules and regulations of the company as in force from time to time and also as per certified model. The Employer can modify the Agreement or Rules and Regulations from time to time and the modification will be applicable from the same day. .8",
+      "cleaned": "4.7 That the employee services will be governed by the rules and regulations of the company as in force from time to time and also as per certified model. The Employer can modify the Agreement or Rules and Regulations from time to time and the modification will be applicable from the same day. .8",
+      "type": "Confidentiality",
+      "confidence": 0.6723496913909912,
+      "terms": {},
+      "simple": "Rules and regulations of the company as in force from time to time and as per certified model.\nThe Employer can modify the Agreement or Rules and Regulations from time to time and the modification will be applicable from the same day.\n.8."
+    },
+    {
+      "index": 11,
+      "raw": "4.8 It is hereby agreed by and between the Company and the Employee hereto that in case any claim, dispute or difference arises between the Parties with regard to the terms and conditions of this Employment Agreement or relating to the interpretation hereof whether during the subsistence of this Employment Agreement or thereafter, the same shall be referred to the sole arbitration of a single arbitrator, Mr. __________, in accordance with the provisions of the Arbitration and Conciliation Act, 1996 or any statutory modification or re-enactment thereof for the time being in force. The arbitration shall be held in Jaipur and the proceedings shall be conducted in the Hindi language. The Parties hereby agree that the arbitral award shall be final, binding and conclusive on the Parties to this Employment Agreement. 5. ANNUAL BASE SALARY .1",
+      "cleaned": "4.8 It is hereby agreed by and between the Company and the Employee hereto that in case any claim, dispute or difference arises between the Parties with regard to the terms and conditions of this Employment Agreement or relating to the interpretation hereof whether during the subsistence of this Employment Agreement or thereafter, the same shall be referred to the sole arbitration of a single arbitrator, Mr. __________, in accordance with the provisions of the Arbitration and Conciliation Act, 1996 or any statutory modification or re-enactment thereof for the time being in force. The arbitration shall be held in Jaipur and the proceedings shall be conducted in the Hindi language. The Parties hereby agree that the arbitral award shall be final, binding and conclusive on the Parties to this Employment Agreement. 5. ANNUAL BASE SALARY .1",
+      "type": "Dispute Resolution",
+      "confidence": 0.7506691217422485,
+      "terms": {
+        "arbitration": "A method of resolving disputes outside the courts."
+      },
+      "simple": "4.8 and between the Company and the Employee hereto that in case.\nSimplify and shorten further: simplify and shorten: The Parties hereby agree that the arbitr.\nSimplify and shorten further: simplify and shorten: ANNUAL BASE .1.\n5.\nANNUAL BASE SALARY .1."
+    },
+    {
+      "index": 12,
+      "raw": "5.1 The Employee, who is entitled to a salary, will be CTC (as given in salary structure) in accordance with the Company's customary payroll practices. .2",
+      "cleaned": "5.1 The Employee, who is entitled to a salary, will be CTC (as given in salary structure) in accordance with the Company's customary payroll practices. .2",
+      "type": "Confidentiality",
+      "confidence": 0.6879711747169495,
+      "terms": {},
+      "simple": "5.1 The Employee, who is entitled to a salary, will be CTC (a.\n.2."
+    },
+    {
+      "index": 13,
+      "raw": "5.2 The Employee shall not entitle to get salary, if he/she fails to meet the objectives or targets laid down by the company. 6. CONFIDENTIALITY .1",
+      "cleaned": "5.2 The Employee shall not entitle to get salary, if he/she fails to meet the objectives or targets laid down by the company. 6. CONFIDENTIALITY .1",
+      "type": "Indemnity",
+      "confidence": 0.6857103705406189,
+      "terms": {
+        "confidentiality": "The obligation to keep certain information private or secret."
+      },
+      "simple": "He/she fails to meet the objectives.\n6.\nCONFIDENTIALITY .1."
+    },
+    {
+      "index": 14,
+      "raw": "6.1 The Employee shall not, directly or indirectly, either during the term of the Employee's employment under this Employment Agreement or thereafter, disclose to anyone (except in the regular course of the Company's business or as required by law), or use in any manner, any information acquired by the Employee during his/her employment by the Company with respect to any trade secrets, clients, customers or other confidential information of the Company, its subsidiaries and associate companies world wide, their operations or affairs unless such information has become public knowledge other than by reason of actions (direct or indirect) of the Employee. .2",
+      "cleaned": "6.1 The Employee shall not, directly or indirectly, either during the term of the Employee's employment under this Employment Agreement or thereafter, disclose to anyone (except in the regular course of the Company's business or as required by law), or use in any manner, any information acquired by the Employee during his/her employment by the Company with respect to any trade secrets, clients, customers or other confidential information of the Company, its subsidiaries and associate companies world wide, their operations or affairs unless such information has become public knowledge other than by reason of actions (direct or indirect) of the Employee. .2",
+      "type": "Confidentiality",
+      "confidence": 0.6797723174095154,
+      "terms": {},
+      "simple": "6.1 The Employee must not, directly or indirectly, disclose to anyone (except in the regular course of the Company's business or as required by law), or use in any manner, any information acquired by the.\n.2."
+    },
+    {
+      "index": 15,
+      "raw": "6.2 As long as the Employee is employed, and also thereafter, he/she shall maintain confidential the corporate secrets and all other information of a confidential nature pertaining to the Company and its operations. The Employee may use such information only during his/her employment by the Company and in the interest of the Company. The Employee shall at all times carefully and diligently safeguard and promote the Company's interests. .3",
+      "cleaned": "6.2 As long as the Employee is employed, and also thereafter, he/she shall maintain confidential the corporate secrets and all other information of a confidential nature pertaining to the Company and its operations. The Employee may use such information only during his/her employment by the Company and in the interest of the Company. The Employee shall at all times carefully and diligently safeguard and promote the Company's interests. .3",
+      "type": "Confidentiality",
+      "confidence": 0.7300912737846375,
+      "terms": {},
+      "simple": "6.2 As long as the employee is employed, and also thereafter, he/she.\nFurther: simplify and shorten.\nThe Employee must at all times carefully and diligently safeguard and promote the Company's interests.\n.3."
+    },
+    {
+      "index": 16,
+      "raw": "6.3 During the course of employment, any such creation, innovation or any such intellectual property in the form of software, hardware etc shall be exclusive property of the company as well the source code of the company shall remain exclusive property of the company. That the employee shall not use the source code of the company directly or indirectly. If the company finds that the employee is contravening this term directly or indirectly then the company shall be entitled to claim damages under section 73, 74 of the contract act and also entitled to initiate legal proceeding against the employee. .4",
+      "cleaned": "6.3 During the course of employment, any such creation, innovation or any such intellectual property in the form of software, hardware etc shall be exclusive property of the company as well the source code of the company shall remain exclusive property of the company. That the employee shall not use the source code of the company directly or indirectly. If the company finds that the employee is contravening this term directly or indirectly then the company shall be entitled to claim damages under section 73, 74 of the contract act and also entitled to initiate legal proceeding against the employee. .4",
+      "type": "Dispute Resolution",
+      "confidence": 0.6768884062767029,
+      "terms": {},
+      "simple": "Section 73, 74 of the contract act and also entitled to initiate legal proceeding against the.\nFurther: simplify and shorten.\nIf the company finds that the employee is contravening this term directly or indirectly then the company must be entitled to claim damages under section 73, 74 of the contract act and also entitled to initiate legal proceeding against the employee.\n.4."
+    },
+    {
+      "index": 17,
+      "raw": "6.4 That during and after the employment period, the employee will not divulge or appropriate to his/her own use or to the use of others, in competition with the company, any secret or confidential information or knowledge pertaining to the business of the company, or of any of its subsidiaries, obtained by the Employee while employed by the company or any of its subsidiaries. .5",
+      "cleaned": "6.4 That during and after the employment period, the employee will not divulge or appropriate to his/her own use or to the use of others, in competition with the company, any secret or confidential information or knowledge pertaining to the business of the company, or of any of its subsidiaries, obtained by the Employee while employed by the company or any of its subsidiaries. .5",
+      "type": "Confidentiality",
+      "confidence": 0.6901520490646362,
+      "terms": {},
+      "simple": "Employment.\n.5."
+    },
+    {
+      "index": 18,
+      "raw": "6.5 That the Employee will maintain proper dignity as well as decorum of company's office. The Employee will maintain and keep in his/her safe custody such identity card, documents, files, books, mobile, laptop, papers etc issued to the Employee and shall return the same whenever required. .6",
+      "cleaned": "6.5 That the Employee will maintain proper dignity as well as decorum of company's office. The Employee will maintain and keep in his/her safe custody such identity card, documents, files, books, mobile, laptop, papers etc issued to the Employee and shall return the same whenever required. .6",
+      "type": "Confidentiality",
+      "confidence": 0.7094354629516602,
+      "terms": {},
+      "simple": "Security card, documents, etc.\nThe Employee will maintain and keep in his/her safe custody such identity card, documents, files, books, mobile, laptop, papers etc issued to the Employee and must return the same whenever required.\n.6."
+    },
+    {
+      "index": 19,
+      "raw": "6.6 The agreement shall revive and apply again from time to time post completion of Two-Year period. .7",
+      "cleaned": "6.6 The agreement shall revive and apply again from time to time post completion of Two-Year period. .7",
+      "type": "Termination",
+      "confidence": 0.6927915811538696,
+      "terms": {},
+      "simple": "The agreement must resume and apply again from time to time post completion of Two-Year period.\n.7."
+    },
+    {
+      "index": 20,
+      "raw": "6.7 When the Employee's employment with the Company is terminated, he/she shall return to the Company all business documentation, software, notes etc. and copies thereof pertaining to the Company and its operations that have been entrusted to him/her or to which he/she has access. 7. NON-COMPETE CLAUSE .1",
+      "cleaned": "6.7 When the Employee's employment with the Company is terminated, he/she shall return to the Company all business documentation, software, notes etc. and copies thereof pertaining to the Company and its operations that have been entrusted to him/her or to which he/she has access. 7. NON-COMPETE CLAUSE .1",
+      "type": "Confidentiality",
+      "confidence": 0.7036134004592896,
+      "terms": {},
+      "simple": "Simplify and shorten further: 6.7 When the Employee's employment with the Company is terminate.\nSimplify and shorten further:.\n7.\nNON-COMPETE CLAUSE .1."
+    },
+    {
+      "index": 21,
+      "raw": "7.1 That the employee after the period of employment is over, shall not open similar nature company upto three years directly or indirectly. If the company finds that the employee is contravening this term directly or indirectly, then the company shall be entitled to claim damages under section 73, 74 of the contract act as well as entitled to initiate appropriate legal proceeding against the employee. .2",
+      "cleaned": "7.1 That the employee after the period of employment is over, shall not open similar nature company upto three years directly or indirectly. If the company finds that the employee is contravening this term directly or indirectly, then the company shall be entitled to claim damages under section 73, 74 of the contract act as well as entitled to initiate appropriate legal proceeding against the employee. .2",
+      "type": "Dispute Resolution",
+      "confidence": 0.7019169330596924,
+      "terms": {},
+      "simple": "7.1 That the employee after the period of employment is over, must not open similar nature company upto three years directly or indirectly.\nIf the company finds that the employee is contravening this term directly or indirectly, then the company must be entitled to claim damages under section 73, 74 of the contract act as well as entitled to initiate appropriate legal proceeding against the employee.\n.2."
+    },
+    {
+      "index": 22,
+      "raw": "7.2 That the client or the customer shall be sole client of the company. During the employment period as well as after the employment period is over, if the company finds out that the employee is trying to connect with the client of the company directly or indirectly, then the company shall be entitled to claim damages under section 73, 74 of the contract act as well as entitled to initiate appropriate legal proceeding against the employee. .3",
+      "cleaned": "7.2 That the client or the customer shall be sole client of the company. During the employment period as well as after the employment period is over, if the company finds out that the employee is trying to connect with the client of the company directly or indirectly, then the company shall be entitled to claim damages under section 73, 74 of the contract act as well as entitled to initiate appropriate legal proceeding against the employee. .3",
+      "type": "Confidentiality",
+      "confidence": 0.662264347076416,
+      "terms": {},
+      "simple": "If the company finds out that the employee is trying to connect with the client of the company directly or indirectly, then if the company finds out.\nDuring the employment period as well as after the employment period is over, if the company finds out that the employee is trying to connect with the client of the company directly or indirectly, then the company must be entitled to claim damages under section 73, 74 of the contract act as well as entitled to initiate appropriate legal proceeding against the employee.\n.3."
+    },
+    {
+      "index": 23,
+      "raw": "7.3 During the course of employment, employee shall not do any personal work or for any third party otherwise it will become a ground for termination and compensation clause will apply. 8. TERM OF CONTRACT, TERMINATION OF EMPLOYMENT AND SEVERANCE PAY .1",
+      "cleaned": "7.3 During the course of employment, employee shall not do any personal work or for any third party otherwise it will become a ground for termination and compensation clause will apply. 8. TERM OF CONTRACT, TERMINATION OF EMPLOYMENT AND SEVERANCE PAY .1",
+      "type": "Termination",
+      "confidence": 0.7346786856651306,
+      "terms": {
+        "termination": "The act of ending a contract or agreement."
+      },
+      "simple": "7.3 During the course of employment, employee must not do any personal work or for any third party.\n8.\nTERM OF CONTRACT, TERMINATION OF EMPLOYMENT AND SEVERANCE PAY .1."
+    },
+    {
+      "index": 24,
+      "raw": "8.1 This Employment Agreement shall continue until terminated by either Party as provided herein and supersedes any and all prior oral or written agreements pertaining to the duration, compensation and conditions of employment of the Employee. .2",
+      "cleaned": "8.1 This Employment Agreement shall continue until terminated by either Party as provided herein and supersedes any and all prior oral or written agreements pertaining to the duration, compensation and conditions of employment of the Employee. .2",
+      "type": "Termination",
+      "confidence": 0.7651445865631104,
+      "terms": {},
+      "simple": "8.1 This employment agreement must continue until terminated by either Party as provided in this document and.\n.2."
+    },
+    {
+      "index": 25,
+      "raw": "8.2 The Employee may lawfully terminate this Employment Agreement by giving to the Employer not less than notice in writing and the employee shall not be entitled to get the salary of the notice period and on break of bond of two years the employee is liable to pay penalty equal to Rs. 2 lakhs. Employer can terminate the employee any time with immediate effect without giving any Notice Period. .3",
+      "cleaned": "8.2 The Employee may lawfully terminate this Employment Agreement by giving to the Employer not less than notice in writing and the employee shall not be entitled to get the salary of the notice period and on break of bond of two years the employee is liable to pay penalty equal to Rs. 2 lakhs. Employer can terminate the employee any time with immediate effect without giving any Notice Period. .3",
+      "type": "Termination",
+      "confidence": 0.6536926031112671,
+      "terms": {},
+      "simple": "8.2 The Employee may lawfully terminate this Employment Agreement by giving to the Employer not less.\nFurther: simplify and shorten.\nEmployer can terminate the employee any time with immediate effect without giving any Notice Period.\n.3."
+    },
+    {
+      "index": 26,
+      "raw": "8.3 In case if the employee leaves the company or terminates his/her employment before completion of two years, then he/she is liable to pay penalty equal to Rs. 2 lakhs. Since the Employer's company is a software developing company as well as a reputed Training Academy that enjoys tremendous goodwill in the market. Since, a lot of time, energy and effort is devoted and invested in grooming young aspiring Employees which is essential in bringing out the best of talent in them and nurturing them to make them able, competent and successful professionals. .4",
+      "cleaned": "8.3 In case if the employee leaves the company or terminates his/her employment before completion of two years, then he/she is liable to pay penalty equal to Rs. 2 lakhs. Since the Employer's company is a software developing company as well as a reputed Training Academy that enjoys tremendous goodwill in the market. Since, a lot of time, energy and effort is devoted and invested in grooming young aspiring Employees which is essential in bringing out the best of talent in them and nurturing them to make them able, competent and successful professionals. .4",
+      "type": "Confidentiality",
+      "confidence": 0.6247823238372803,
+      "terms": {},
+      "simple": "8.3 In case if the employee leaves the company or terminates his/her employment before.\nSimplify and shorten further: simplify and shorten: Since the Employer's company is.\nFurther: simplify and shorten.\nSince, a lot of time, energy and effort is devoted and invested in grooming young aspiring Employees which is essential in bringing out the best of talent in them and nurturing them to make them able, competent and successful professionals.\n.4."
+    },
+    {
+      "index": 27,
+      "raw": "8.4 No severance pay, as mentioned above, will be made to the Employee in case the Company has terminated the Employee's employment due to his/her breach of Agreement or if he/she do not meet the performance criteria prescribed by the Company. .5",
+      "cleaned": "8.4 No severance pay, as mentioned above, will be made to the Employee in case the Company has terminated the Employee's employment due to his/her breach of Agreement or if he/she do not meet the performance criteria prescribed by the Company. .5",
+      "type": "Indemnity",
+      "confidence": 0.6874434947967529,
+      "terms": {
+        "breach": "A violation of a law, duty, or other form of obligation."
+      },
+      "simple": ".\n.5."
+    },
+    {
+      "index": 28,
+      "raw": "8.5 All memoranda, notes, records, or other documents made or composed by the Employee, or made available to him/her during the term of this Employment Agreement concerning or in any way relating to the business or affairs of the Company, its subsidiaries, divisions, affiliates, or clients shall be the Company's property and shall be delivered to the Company on the termination of this Employment Agreement or at any other time at the request of the Company. .6",
+      "cleaned": "8.5 All memoranda, notes, records, or other documents made or composed by the Employee, or made available to him/her during the term of this Employment Agreement concerning or in any way relating to the business or affairs of the Company, its subsidiaries, divisions, affiliates, or clients shall be the Company's property and shall be delivered to the Company on the termination of this Employment Agreement or at any other time at the request of the Company. .6",
+      "type": "Dispute Resolution",
+      "confidence": 0.6727758646011353,
+      "terms": {
+        "termination": "The act of ending a contract or agreement."
+      },
+      "simple": ".\n.6."
+    },
+    {
+      "index": 29,
+      "raw": "8.6 That if the employee commits any offence punishable under the Indian Law even outside the company or with the customer outside the course of employment, the company shall not be responsible for it in any circumstances. .7",
+      "cleaned": "8.6 That if the employee commits any offence punishable under the Indian Law even outside the company or with the customer outside the course of employment, the company shall not be responsible for it in any circumstances. .7",
+      "type": "Governing Law",
+      "confidence": 0.6551111340522766,
+      "terms": {},
+      "simple": "If the employee commits any offence punishable under the Indian Law even outside the company.\n.7."
+    },
+    {
+      "index": 30,
+      "raw": "8.7 That during the course of employment, if the employee commits any fraud with the company and as a result of which the company suffers huge loss, in case of such an event, the Employer shall be entitled to recover the same from the employee's movable and immovable property by instituting legal / court proceedings. .8",
+      "cleaned": "8.7 That during the course of employment, if the employee commits any fraud with the company and as a result of which the company suffers huge loss, in case of such an event, the Employer shall be entitled to recover the same from the employee's movable and immovable property by instituting legal / court proceedings. .8",
+      "type": "Indemnity",
+      "confidence": 0.6851705312728882,
+      "terms": {},
+      "simple": "The Employer must be entitled.\n.8."
+    },
+    {
+      "index": 31,
+      "raw": "8.8 If any training is provided to the employee, the company has full rights to recover the expenses incurred to train that employee if he/she resigns before completion of 6 months of the training tenure. .9",
+      "cleaned": "8.8 If any training is provided to the employee, the company has full rights to recover the expenses incurred to train that employee if he/she resigns before completion of 6 months of the training tenure. .9",
+      "type": "Indemnity",
+      "confidence": 0.657630443572998,
+      "terms": {},
+      "simple": "He/she is not trained.\n.9."
+    },
+    {
+      "index": 32,
+      "raw": "8.9 Notwithstanding the above, Employment Agreement can be terminated on the following grounds: .18..1",
+      "cleaned": "8.9 Notwithstanding the above, Employment Agreement can be terminated on the following grounds: .18..1",
+      "type": "Termination",
+      "confidence": 0.7243102788925171,
+      "terms": {},
+      "simple": "."
+    },
+    {
+      "index": 33,
+      "raw": "9.1 Employee being found guilty of any dishonesty, misconduct, willful neglect of duty or other conduct amounting to gross misconduct with fellow colleagues or seniors; .28..2",
+      "cleaned": "9.1 Employee being found guilty of any dishonesty, misconduct, willful neglect of duty or other conduct amounting to gross misconduct with fellow colleagues or seniors; .28..2",
+      "type": "Indemnity",
+      "confidence": 0.6553448438644409,
+      "terms": {},
+      "simple": "9.1 Employee being found guilty of any dishonesty, misconduct, willful neglect of."
+    },
+    {
+      "index": 34,
+      "raw": "9.2 Employee committing a material breach of the terms and conditions of this Employment Agreement; .38..3",
+      "cleaned": "9.2 Employee committing a material breach of the terms and conditions of this Employment Agreement; .38..3",
+      "type": "Termination",
+      "confidence": 0.7475895881652832,
+      "terms": {
+        "breach": "A violation of a law, duty, or other form of obligation."
+      },
+      "simple": "9.2 Employee committing a material breach of the terms and conditions."
+    },
+    {
+      "index": 35,
+      "raw": "9.3 Employee being found to be medically unfit or, .48..4",
+      "cleaned": "9.3 Employee being found to be medically unfit or, .48..4",
+      "type": "Indemnity",
+      "confidence": 0.6371703743934631,
+      "terms": {},
+      "simple": "Employee being found to be medically unfit or .48."
+    },
+    {
+      "index": 36,
+      "raw": "9.4 Employee being declared a bankrupt or insolvent or, .58..5",
+      "cleaned": "9.4 Employee being declared a bankrupt or insolvent or, .58..5",
+      "type": "Termination",
+      "confidence": 0.6524664759635925,
+      "terms": {},
+      "simple": "9.4 Employee being declared a bankrupt or insolvent or."
+    },
+    {
+      "index": 37,
+      "raw": "9.5 Employee being convicted of any offence involving moral turpitude or defined under the Indian Law, .68..6",
+      "cleaned": "9.5 Employee being convicted of any offence involving moral turpitude or defined under the Indian Law, .68..6",
+      "type": "Governing Law",
+      "confidence": 0.6935919523239136,
+      "terms": {},
+      "simple": "."
+    },
+    {
+      "index": 38,
+      "raw": "9.6 Misappropriation of the Company's monies or property by the Employee or; .78..7",
+      "cleaned": "9.6 Misappropriation of the Company's monies or property by the Employee or; .78..7",
+      "type": "Termination",
+      "confidence": 0.6819530129432678,
+      "terms": {},
+      "simple": "9.6 Misappropriation of the Company's monies or property."
+    },
+    {
+      "index": 39,
+      "raw": "9.7 Misconduct or insubordination on the part of the Employee, .88..8",
+      "cleaned": "9.7 Misconduct or insubordination on the part of the Employee, .88..8",
+      "type": "Termination",
+      "confidence": 0.6799351572990417,
+      "terms": {},
+      "simple": "Simplify and shorten further: simplify and shorten."
+    },
+    {
+      "index": 40,
+      "raw": "9.8 Infringement of any Company rules and regulations by the Employee. The Employee shall be liable to be dismissed or discharged forthwith notwithstanding the rights and without giving any notice, which the Company may otherwise have against the Employee in case of any loss (grave or remote) caused by the employee during the course of his/her employment and the losses will be borne by him/her by way of damages which shall be calculated by the management of the company. 9. OTHER TERMS OF EMPLOYMENT Company has prepared Guidelines for Employees in which Rules and Regulation for an employee are defined. These Guidelines will be defining the policies of the company. These guidelines will be available to the employees on mail. Guidelines are subject to change as and when required. And it will be part & parcel of this Agreement and it will be binding on the employees. 10. MISCELLANEOUS .11.1",
+      "cleaned": "9.8 Infringement of any Company rules and regulations by the Employee. The Employee shall be liable to be dismissed or discharged forthwith notwithstanding the rights and without giving any notice, which the Company may otherwise have against the Employee in case of any loss (grave or remote) caused by the employee during the course of his/her employment and the losses will be borne by him/her by way of damages which shall be calculated by the management of the company. 9. OTHER TERMS OF EMPLOYMENT Company has prepared Guidelines for Employees in which Rules and Regulation for an employee are defined. These Guidelines will be defining the policies of the company. These guidelines will be available to the employees on mail. Guidelines are subject to change as and when required. And it will be part & parcel of this Agreement and it will be binding on the employees. 10. MISCELLANEOUS .11.1",
+      "type": "Dispute Resolution",
+      "confidence": 0.6661474704742432,
+      "terms": {},
+      "simple": "9.8 Infringement of any Company rules and regulations by the employee.\nCompany has prepared Guidelines for Employees in which Rules and Regulations for an Company have been prepared.\nSimplify and shorten further: simplify and shorten.\nSimplify and shorten further: simplify and shorten: Guidelines are subject to change as and when.\nThese guidelines will be available to the employees on mail.\nGuidelines are subject to change as and when required.\nAnd it will be part & parcel of this Agreement and it will be binding on the employees.\n10.\nMISCELLANEOUS .11.1."
+    },
+    {
+      "index": 41,
+      "raw": "0.1 This Employment Agreement contains a complete statement of all the arrangements between the Company and the Employee with respect to its subject matter and supersedes all previous agreements, written or oral relating to the subject matter of this Employment Agreement, and cannot be modified, amended, or terminated orally. .21.2",
+      "cleaned": "0.1 This Employment Agreement contains a complete statement of all the arrangements between the Company and the Employee with respect to its subject matter and supersedes all previous agreements, written or oral relating to the subject matter of this Employment Agreement, and cannot be modified, amended, or terminated orally. .21.2",
+      "type": "Confidentiality",
+      "confidence": 0.6981328725814819,
+      "terms": {},
+      "simple": "Simplify and shorten further: .21.2.\n.21.2."
+    },
+    {
+      "index": 42,
+      "raw": "0.2 That this employment agreement may be amended or cancelled by mutual agreement of the parties and without consent of any other person and, so long as the employee lives, no person, other than the parties hereto, shall have any rights under or interest in this Agreement. 11. JURISDICTION .11.1",
+      "cleaned": "0.2 That this employment agreement may be amended or cancelled by mutual agreement of the parties and without consent of any other person and, so long as the employee lives, no person, other than the parties hereto, shall have any rights under or interest in this Agreement. 11. JURISDICTION .11.1",
+      "type": "Dispute Resolution",
+      "confidence": 0.7110217213630676,
+      "terms": {
+        "jurisdiction": "The official power to make legal decisions and judgments."
+      },
+      "simple": "1.\n11.\nJURISDICTION .11.1."
+    },
+    {
+      "index": 43,
+      "raw": "1.1 This Employment Agreement shall be governed by and construed in accordance with the laws of Jaipur (India). .21.2",
+      "cleaned": "1.1 This Employment Agreement shall be governed by and construed in accordance with the laws of Jaipur (India). .21.2",
+      "type": "Governing Law",
+      "confidence": 0.7679680585861206,
+      "terms": {},
+      "simple": "1.1 This employment agreement must be governed by and construed in accordance with.\n.21.2."
+    },
+    {
+      "index": 44,
+      "raw": "1.2 In cases if any dispute arises that is of administrative trivial nature, then the same shall be referred to the board, thus the decision of the board will be final and binding on the parties. IN WITNESS WHEREOF the Parties hereto have hereunto set and subscribed their respective hands the day and year first hereinabove written. In the Presence of :",
+      "cleaned": "1.2 In cases if any dispute arises that is of administrative trivial nature, then the same shall be referred to the board, thus the decision of the board will be final and binding on the parties. IN WITNESS WHEREOF the Parties hereto have hereunto set and subscribed their respective hands the day and year first hereinabove written. In the Presence of :",
+      "type": "Dispute Resolution",
+      "confidence": 0.670407772064209,
+      "terms": {},
+      "simple": "Simplify and shorten further: 1.2.\nIN WITNESS WHEREOF the Parties hereto have hereunto set and subscribed their respective hands the day and year first in this documentabove written.\nIn the Presence of :."
+    }
+  ],
+  "simplification_level": "Advanced"
+}

@@ -1,0 +1,32 @@
+/* Login / Signup overlay styles (inspired by popular split forms) */
+:root{--accent1:#667eea;--accent2:#9b6bff;--bg:#0f0c29}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Poppins,Segoe UI,Arial,sans-serif;background:linear-gradient(135deg,#2b2550 0%,#1b123b 100%);color:#fff}
+.container{position:relative;width:900px;max-width:94%;min-height:540px;margin:48px auto;background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.6)}
+.form-container{position:absolute;top:0;height:100%;transition:all .6s ease}
+.sign-in-container{left:0;width:50%;z-index:2}
+.sign-up-container{left:0;width:50%;opacity:0;z-index:1}
+.container.right-panel-active .sign-up-container{transform:translateX(100%);opacity:1;z-index:5}
+.container.right-panel-active .sign-in-container{transform:translateX(100%)}
+form{background:transparent;display:flex;flex-direction:column;padding:48px;align-items:flex-start;justify-content:center;height:100%}
+form h1{font-weight:800;margin:0 0 12px;font-size:1.5rem;color:#fff}
+form input{width:100%;padding:12px 14px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.03);color:#fff}
+form button{margin-top:12px;padding:12px 18px;border-radius:10px;border:none;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#fff;font-weight:700;cursor:pointer}
+.social-container{margin:12px 0}
+.social{display:inline-block;margin-right:10px;color:#fff;opacity:.9}
+.overlay-container{position:absolute;right:0;width:50%;height:100%;top:0;overflow:hidden}
+.overlay{background:linear-gradient(135deg,var(--accent1),var(--accent2));height:100%;color:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:32px;transition:transform .6s ease}
+.overlay-panel{padding:20px;text-align:left}
+.overlay-panel h1{font-size:1.6rem;margin-bottom:8px}
+.overlay-panel p{opacity:.95}
+.ghost{background:transparent;border:2px solid rgba(255,255,255,0.6);padding:10px 18px;border-radius:8px;color:#fff;cursor:pointer}
+.mobile-switch{display:none;margin-top:12px;font-size:.9rem}
+@media(max-width:780px){
+  .container{width:100%;min-height:680px;border-radius:0}
+  .sign-in-container,.sign-up-container,.overlay-container{position:relative;width:100%;height:auto}
+  .mobile-switch{display:block}
+  .overlay{position:relative;height:180px;border-radius:0}
+}
+/* small niceties */
+a{color:inherit}
+.small-note{opacity:.9}

@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ClauseEase app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+        min-height: 100vh;
+        overflow-x: hidden;
+        color: #fff;
+      }
+
+      body::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background:
+          radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.15) 0%, transparent 50%),
+          radial-gradient(circle at 80% 80%, rgba(88, 86, 214, 0.15) 0%, transparent 50%),
+          radial-gradient(circle at 40% 20%, rgba(138, 43, 226, 0.15) 0%, transparent 50%);
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      /* Navbar */
+      .navbar {
+        background: rgba(255, 255, 255, 0.05) !important;
+        backdrop-filter: blur(25px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease;
+        z-index: 1000;
+      }
+
+      .navbar:hover {
+        background: rgba(255, 255, 255, 0.08) !important;
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: #fff !important;
+        letter-spacing: -0.5px;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s ease;
+      }
+
+      .navbar-brand:hover {
+        transform: scale(1.05);
+      }
+
+      .navbar-nav .nav-link {
+        color: #ddd !important;
+        font-weight: 500;
+        margin-left: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .nav-link.active {
+        color: #fff !important;
+        text-shadow: 0 0 10px rgba(255,255,255,0.4);
+      }
+
+      main.container {
+        position: relative;
+        z-index: 1;
+        padding-top: 4rem;
+        max-width: 1200px;
+        animation: fadeInUp 0.8s ease both;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Title */
+      .main-title {
+        font-size: 3.5rem;
+        text-align: center;
+        background: linear-gradient(135deg, #ffffff 0%, #d8e1ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 50px rgba(255, 255, 255, 0.05);
+        margin-bottom: 3rem;
+        font-weight: 700;
+        letter-spacing: -1px;
+        animation: titleFade 1s ease-in;
+      }
+
+      @keyframes titleFade {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Flash alert box */
+      .alert {
+        border: none;
+        border-radius: 15px;
+        background: rgba(255, 193, 7, 0.12);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 193, 7, 0.25);
+        color: #ffc107;
+        padding: 1.2rem 1.5rem;
+        font-weight: 500;
+        box-shadow: 0 8px 25px rgba(255, 193, 7, 0.08);
+        animation: fadeIn 0.6s ease both;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      /* Utility and responsiveness */
+      .btn {
+        border-radius: 50px;
+        transition: all 0.3s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      }
+
+      @media (max-width: 768px) {
+        .main-title {
+          font-size: 2.3rem;
+          margin-bottom: 2rem;
+        }
+        .navbar-brand img {
+          height: 30px !important;
+        }
+        .navbar-nav .nav-link {
+          margin-left: 0;
+          padding: 0.5rem 1rem;
+        }
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        color: #aaa;
+        font-size: 0.9rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.03);
+        margin-top: 4rem;
+      }
+
+      footer a {
+        color: #d0d3ff;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">
+        {% if logo_filename %}
+          <img src="{{ url_for('uploaded_file', filename=logo_filename) }}" alt="ClauseEase Logo" style="height:38px;width:auto;border-radius:8px;margin-right:12px;object-fit:cover;">
+        {% else %}
+          <i class="fas fa-file-contract mr-2"></i>
+        {% endif %}
+        ClauseEase
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('dashboard') }}#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('dashboard') }}#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('dashboard') }}#upload">Upload</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('dashboard') }}#history">See History</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container mt-5 pt-15">
+      <h1 class="main-title mb-15">Contract Language Simplifier</h1>
+
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <div class="alert alert-warning mt-4 text-center">
+            <i class="fas fa-info-circle mr-2"></i>
+            {% for msg in messages %}{{ msg }}<br>{% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+      © {{ current_year or "2025" }} ClauseEase — Simplifying Contracts with AI  
+      <br><a href="https://github.com/tulu-g559/ClauseEase">GitHub</a> | <a href="#">Privacy</a>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      (function() {
+        function activateHashTab() {
+          var hash = window.location.hash || '#home';
+          var $pane = $(hash);
+          if (!$pane.length) return;
+          $('.tab-pane').removeClass('show active');
+          $pane.addClass('show active');
+          $('.navbar-nav .nav-link').removeClass('active');
+          var $nav = $('.navbar-nav .nav-link').filter(function() {
+            return this.hash === hash || $(this).data('target') === hash;
+          }).first();
+          if ($nav.length) $nav.addClass('active');
+        }
+
+        $(document).ready(function() {
+          activateHashTab();
+          $('a.nav-link').on('click', function(e) {
+            var href = $(this).attr('href');
+            if (!href) return;
+            var parts = href.split('#');
+            if (parts.length > 1) {
+              var hash = '#' + parts[1];
+              if (window.location.pathname === new URL(href, window.location.origin).pathname) {
+                e.preventDefault();
+                window.location.hash = hash;
+                activateHashTab();
+              }
+            }
+          });
+        });
+      })();
+    </script>
+    {% block extra_scripts %}{% endblock %}
+  </body>
+</html> 

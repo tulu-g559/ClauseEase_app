@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClauseEase | Sign In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* Container */
+  .container-split {
+    display: flex;
+    width: 85%;
+    height: 85vh;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 80px rgba(48, 43, 99, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  /* Left Auth Panel */
+  .left-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Right Info Panel */
+  .right-panel {
+    flex: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 4rem;
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .right-panel h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ffffff 0%, #b3b3ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .right-panel p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: rgba(255,255,255,0.85);
+    max-width: 480px;
+  }
+
+  .right-panel ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .right-panel li {
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    position: relative;
+    padding-left: 2rem;
+    color: rgba(255,255,255,0.95);
+  }
+
+  .right-panel li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #38ef7d;
+    font-weight: bold;
+  }
+
+  /* Auth Box */
+  .auth-box {
+    width: 380px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2.2rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+  }
+
+  .auth-tabs {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+  }
+
+  .auth-tabs button {
+    flex: 1;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 12px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .auth-tabs button.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+  }
+
+  .auth-form {
+    display: none;
+  }
+
+  .auth-form.active {
+    display: block;
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  label {
+    font-weight: 600;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.25);
+    background: rgba(255,255,255,0.1);
+    font-size: 0.9rem;
+    color: #fff;
+    margin-top: 5px;
+    transition: 0.3s;
+  }
+
+  input::placeholder {
+    color: rgba(255,255,255,0.6);
+  }
+
+  input:focus {
+    border-color: #38ef7d;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(56,239,125,0.2);
+  }
+
+  .auth-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(17,153,142,0.4);
+    transition: all 0.3s;
+    margin-top: 10px;
+  }
+
+  .auth-btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  }
+
+  .small-text {
+    text-align: center;
+    margin-top: 1rem;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+  }
+
+  .small-text a {
+    color: #a3bffa;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .small-text a:hover {
+    text-decoration: underline;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media(max-width: 900px) {
+    .container-split {
+      flex-direction: column;
+      height: auto;
+    }
+    .right-panel {
+      order: -1;
+      padding: 2rem;
+      text-align: center;
+    }
+  }
+</style>
+
+<div class="container-split">
+  <!-- Left (Forms) -->
+  <div class="left-panel">
+    <div class="auth-box">
+      <!-- Flashed messages (server-side) -->
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          <div class="flash-messages" style="margin-bottom:12px;">
+            {% for category, msg in messages %}
+              <div class="alert" style="padding:10px;border-radius:8px;margin-bottom:8px;background:rgba(255,255,255,0.06);color:#fff;border:1px solid rgba(255,255,255,0.08);">
+                {{ msg }}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+      <div class="auth-tabs">
+        <button id="login-tab" class="active">Login</button>
+        <button id="signup-tab">Register</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form" class="auth-form active" method="POST" action="/login">
+
+        <div class="form-group" style="margin-bottom: 20px; margin-right: 20px;">
+          <label></label>
+          <input type="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 20px; margin-right: 20px;">
+          <label>Password</label>
+          <input type="password" name="password" placeholder="********" required>
+        </div>
+        <div class="form-group">
+          <label>Role</label>
+          <select name="role" style="width:100%; padding:10px; border-radius:8px; margin-top:6px;">
+            <option value="user" selected>User</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+        <button class="auth-btn" type="submit">Sign In</button>
+        <p class="small-text">Don’t have an account? <a href="#" id="switchToSignup">Register</a></p>
+      </form>
+
+      <!-- Signup Form -->
+      <form id="signup-form" class="auth-form" method="POST" action="/signup">
+        <div class="form-group" style="margin-bottom: 20px; margin-right: 20px;">
+          <label>Full Name</label>
+          <input type="text" name="name" placeholder="Your Full Name" required>
+        </div>
+
+
+        <div class="form-group" style="margin-bottom: 20px; margin-right: 20px;">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="you@email.com" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 20px; margin-right: 20px;">
+          <label>Role</label>
+          <select name="role" style="width:100%; padding:10px; border-radius:8px; margin-top:6px;">
+            <option value="user" selected>User</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-bottom: 20px; margin-right: 20px;">
+          <label>Password</label>
+          <input type="password" name="password" placeholder="********" required>
+        </div>
+        <button class="auth-btn" type="submit">Register</button>
+        <p class="small-text">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Right (Description) -->
+  <div class="right-panel">
+    <h1>ClauseEase</h1>
+    Contract Language Simplifier
+    <p>Transforming Legal Documents through Intelligent Automation</p>
+    <ul>
+      <li>AI-Driven Contract Understanding</li>
+      <li>Multi-Format Uploads (PDF, DOCX, TXT)</li>
+      <li>Simplify Complex Legal Language</li>
+      <li>Clear Contracts. Confident Decisions</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+const loginTab = document.getElementById('login-tab');
+const signupTab = document.getElementById('signup-tab');
+const loginForm = document.getElementById('login-form');
+const signupForm = document.getElementById('signup-form');
+
+loginTab.addEventListener('click', () => {
+  loginTab.classList.add('active');
+  signupTab.classList.remove('active');
+  loginForm.classList.add('active');
+  signupForm.classList.remove('active');
+});
+
+signupTab.addEventListener('click', () => {
+  signupTab.classList.add('active');
+  loginTab.classList.remove('active');
+  signupForm.classList.add('active');
+  loginForm.classList.remove('active');
+});
+
+document.getElementById("switchToSignup").onclick = e => {
+  e.preventDefault();
+  signupTab.click();
+};
+document.getElementById("switchToLogin").onclick = e => {
+  e.preventDefault();
+  loginTab.click();
+};
+
+// No inline JS error handling; flashed messages are rendered above the form
+</script>
+</body>
+</html>

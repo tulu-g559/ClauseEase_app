@@ -1,0 +1,108 @@
+[
+  {
+    "index": 1,
+    "raw": "ClauseEase: Simplifying Legal Language Using Artificial Intelligence Arnab Ghosh 1. ABSTRACT Legal contracts are often filled with complex, jargon-heavy language that is difficult for non- lawyers to comprehend. This complexity can lead to misunderstandings, delays, and legal risks. ClauseEase aims to address this challenge by developing an AI-powered system that automatically extracts, analyzes, classifies, and simplifies legal contract clauses without losing their legal intent. Using natural language processing (NLP) and machine learning (ML), ClauseEase converts complex contract language into plain English while retaining accuracy and context. The system is designed to assist small businesses, clients, and legal professionals in understanding contractual terms more easily. 2. INTRODUCTION Contracts are essential legal instruments but are often written in complicated and technical language that can be overwhelming to ordinary readers. Existing tools typically paraphrase content without maintaining legal precision. ClauseEase bridges this gap by providing a modular, automated system for simplifying and explaining legal contracts. The project leverages AI technologies like Legal-BERT, spaCy, and transformers to identify clauses, detect legal terms, and generate simplified versions of each clause. This ensures accessibility and transparency while preserving legal integrity. The overall system has been divided into multiple modules, each performing a distinct function in the processing pipeline. 3. MODULES IMPLEMENTED .1",
+    "cleaned": "ClauseEase: Simplifying Legal Language Using Artificial Intelligence Arnab Ghosh 1. ABSTRACT Legal contracts are often filled with complex, jargon-heavy language that is difficult for non- lawyers to comprehend. This complexity can lead to misunderstandings, delays, and legal risks. ClauseEase aims to address this challenge by developing an AI-powered system that automatically extracts, analyzes, classifies, and simplifies legal contract clauses without losing their legal intent. Using natural language processing (NLP) and machine learning (ML), ClauseEase converts complex contract language into plain English while retaining accuracy and context. The system is designed to assist small businesses, clients, and legal professionals in understanding contractual terms more easily. 2. INTRODUCTION Contracts are essential legal instruments but are often written in complicated and technical language that can be overwhelming to ordinary readers. Existing tools typically paraphrase content without maintaining legal precision. ClauseEase bridges this gap by providing a modular, automated system for simplifying and explaining legal contracts. The project leverages AI technologies like Legal-BERT, spaCy, and transformers to identify clauses, detect legal terms, and generate simplified versions of each clause. This ensures accessibility and transparency while preserving legal integrity. The overall system has been divided into multiple modules, each performing a distinct function in the processing pipeline. 3. MODULES IMPLEMENTED .1",
+    "type": "Termination",
+    "terms": {},
+    "simple": "ClauseEase: Simplifying Legal Language Using Artificial Intelligence Arnab Ghosh 1. ABSTRACT Les contrats juridiques sont oft filled with complex, jargon-heavy language that is difficult for non- lawyers to comprehend. Diese Komplexität kann zu Missverständnissen, Verzögerungen und rechtlichen Risiken führen. Ease aims to address this challenge by developing a AI-powered system that automatically extracts, analyzes, classifies and simplifies legal contract clauses without losing their legal intent. ClauseEase aims to address this challenge by developing an AI-powered system that automatically extracts, analyzes, classifies, and simplifies legal contract clauses without losing their legal intent. ClauseEase converts complex contract language into plain English while retaining accuracy and context. ClauseEase uses natural language processing (NLP) and machine learning (ML). Das System ist so konzipiert, dass kleine Unternehmen, Kunden und Rechtsexperten die Möglichkeit haben, die Vertragsbedingungen besser zu verstehen. 2. INTRODUCTION Les contrats sont des instruments juridiques essentiels, mais ils sont souvent rédigés dans des langages complexes et techniques, pouvant être overwhelming pour les lecteurs. Existing tools paraphrase content without maintaining legal precision. Ease bridges this gap by providing a modular, automated system for simplifying and explaining legal contracts. leverages AI technologies like Legal-BERT, spaCy, and transformers to identify clauses, detect legal terms, and generate simplified versions of each clause. ensuring accessibility and transparency while preserving legal integrity. Das Gesamtsystem besteht aus mehreren Modulen, die jeweils eine unterschiedliche Funktion in der Prozessleitung ausführen. 3. Modul"
+  },
+  {
+    "index": 2,
+    "raw": "3.1 Document Ingestion Module .13..1",
+    "cleaned": "3.1 Document Ingestion Module .13..1",
+    "type": "Termination",
+    "terms": {},
+    "simple": "3.1 Document Ingestion Module .13..1"
+  },
+  {
+    "index": 3,
+    "raw": "1.1 Objective: Extract text data from legal contracts in PDF and DOCX formats. .23..2",
+    "cleaned": "1.1 Objective: Extract text data from legal contracts in PDF and DOCX formats. .23..2",
+    "type": "Governing Law",
+    "terms": {},
+    "simple": "1.1 ObjectObject: Extract text data from legal contracts in PDF and DOCX formats. 2"
+  },
+  {
+    "index": 4,
+    "raw": "1.2 Description: This module acts as the input layer of ClauseEase. It extracts clean, structured text from uploaded contract files using libraries like PyMuPDF (fitz) and python-docx. The extracted text serves as the foundation for all further NLP tasks. .33..3",
+    "cleaned": "1.2 Description: This module acts as the input layer of ClauseEase. It extracts clean, structured text from uploaded contract files using libraries like PyMuPDF (fitz) and python-docx. The extracted text serves as the foundation for all further NLP tasks. .33..3",
+    "type": "Governing Law",
+    "terms": {},
+    "simple": "Beschreibung: This module acts as the input layer of ClauseEase. Es extracts clean, structured text from uploaded contract files using libraries like PyMuPDF (fitz) and python-docx. Der extracted text dient als Grundlage für alle weiteren NLP-Aufgaben. 3"
+  },
+  {
+    "index": 5,
+    "raw": "1.3 Technologies Used: • Python • PyMuPDF (for PDFs) • python-docx (for DOCX files) • os, glob (for file handling) .2",
+    "cleaned": "1.3 Technologies Used: • Python • PyMuPDF (for PDFs) • python-docx (for DOCX files) • os, glob (for file handling) .2",
+    "type": "Termination",
+    "terms": {},
+    "simple": ": • Python • PyMuPDF (for PDFs) • python-docx (for DOCX files) • os, glob (for file handling) .2 Technologies Used: • Python • PyMuPDF (for PDFs) • python-docx (for DOCX files) • os, glob (for file handling) .2 ."
+  },
+  {
+    "index": 6,
+    "raw": "3.2 Text Preprocessing Module .13..1",
+    "cleaned": "3.2 Text Preprocessing Module .13..1",
+    "type": "Termination",
+    "terms": {},
+    "simple": "3.2 Text Preprocessing Module .13..1"
+  },
+  {
+    "index": 7,
+    "raw": "2.1 Objective: Clean, normalize, and segment the extracted text into meaningful clauses. .23..2",
+    "cleaned": "2.1 Objective: Clean, normalize, and segment the extracted text into meaningful clauses. .23..2",
+    "type": "Termination",
+    "terms": {},
+    "simple": "2.1 Objectif: Clean, normalize, and segment the extracted text into meaningful clauses. 2"
+  },
+  {
+    "index": 8,
+    "raw": "2.2 Description: This module processes the raw text by removing unwanted characters, spaces, and formatting inconsistencies. It uses regex for pattern-based clause segmentation, NLTK for sentence tokenization, and spaCy for named entity extraction. The output is a structured set of clauses, each containing clean text, sentences, and identified entities — ready for analysis. .33..3",
+    "cleaned": "2.2 Description: This module processes the raw text by removing unwanted characters, spaces, and formatting inconsistencies. It uses regex for pattern-based clause segmentation, NLTK for sentence tokenization, and spaCy for named entity extraction. The output is a structured set of clauses, each containing clean text, sentences, and identified entities — ready for analysis. .33..3",
+    "type": "Termination",
+    "terms": {},
+    "simple": "2.2 Description: This module processes the raw text by removing unwanted characters, spaces, and formatting inconsistencies. It uses regex for pattern-based clause segmentation, NLTK for sentence tokenization, spaCy for named entity extraction. is a structured set of clauses, each containing clean text, sentences, and identified entities — ready for analysis. 3"
+  },
+  {
+    "index": 9,
+    "raw": "1.3 Technologies Used: • Python • re (regular expressions) • nltk (sentence tokenization) • spacy (named entity recognition) .3",
+    "cleaned": "1.3 Technologies Used: • Python • re (regular expressions) • nltk (sentence tokenization) • spacy (named entity recognition) .3",
+    "type": "Governing Law",
+    "terms": {},
+    "simple": "1.3 Technologies Used: • Python • re (regular expressions) • nltk (sentence tokenization) • spacy (named entity recognition) .3 Technologies used: • Python • re (regular expressions) • nltk (sentence tokenization) • spacy (named entity recognition)"
+  },
+  {
+    "index": 10,
+    "raw": "3.3 Legal Clause Detection Module Objective: Automatically detect and classify clauses into legal categories using AI models. Description: This module employs the Legal-BERT model (nlpaueb/legal-bert-base-uncased) to understand and label each clause based on its type — such as Confidentiality, Termination, Indemnity, Dispute Resolution, or Governing Law. Using transformers and PyTorch, it tokenizes input clauses and predicts the most probable class. This step helps structure large contracts into labeled sections, simplifying analysis. Technologies Used: • transformers • torch (PyTorch) • scikit-learn • numpy Model Used: nlpaueb/legal-bert-base-uncased .4",
+    "cleaned": "3.3 Legal Clause Detection Module Objective: Automatically detect and classify clauses into legal categories using AI models. Description: This module employs the Legal-BERT model (nlpaueb/legal-bert-base-uncased) to understand and label each clause based on its type — such as Confidentiality, Termination, Indemnity, Dispute Resolution, or Governing Law. Using transformers and PyTorch, it tokenizes input clauses and predicts the most probable class. This step helps structure large contracts into labeled sections, simplifying analysis. Technologies Used: • transformers • torch (PyTorch) • scikit-learn • numpy Model Used: nlpaueb/legal-bert-base-uncased .4",
+    "type": "Termination",
+    "terms": {
+      "indemnity": "Security or protection against a loss or other financial burden.",
+      "confidentiality": "The obligation to keep certain information private or secret.",
+      "termination": "The act of ending a contract or agreement.",
+      "governing law": "The legal jurisdiction whose laws will apply to the agreement."
+    },
+    "simple": "Detection of Legal Clause Detection Module Objective: Automatically detect and classify clauses into legal categories using AI models. Description: This module employs the Legal-BERT model (nlpaueb/legal-bert-base-uncased) to understand and label each clause based on its type — such as Confidentiality, Termination, Indemnity, Dispute Resolution, or Governing Law. Using transformers and PyTorch, it tokenizes input clauses and predicts the most probable class. This step helps structure large contracts large contracts into labeled sections, simplifying analysis. • transformers • torch (PyTorch) • scikit-learn • numpy Model Used: nlpaueb/legal-bert-base-uncased .4"
+  },
+  {
+    "index": 11,
+    "raw": "3.4 Legal Term Recognition Module Objective: Identify and highlight important legal terms or jargon inside each clause. Description: This module works at the word or phrase level, detecting specific legal terminology within the contract. It can be implemented in two ways: 1. Using Pretrained Models (spaCy) – Detects entities automatically (e.g., \"Arbitration,\" \"Jurisdiction\"). 2. Using a Custom Legal Dictionary – Uses pattern matching and regex to locate pre-defined legal terms and provide their meanings. This feature is crucial for simplifying and explaining contracts in plain English later. Technologies Used: • Python • re • spacy (NER models) .5",
+    "cleaned": "3.4 Legal Term Recognition Module Objective: Identify and highlight important legal terms or jargon inside each clause. Description: This module works at the word or phrase level, detecting specific legal terminology within the contract. It can be implemented in two ways: 1. Using Pretrained Models (spaCy) – Detects entities automatically (e.g., \"Arbitration,\" \"Jurisdiction\"). 2. Using a Custom Legal Dictionary – Uses pattern matching and regex to locate pre-defined legal terms and provide their meanings. This feature is crucial for simplifying and explaining contracts in plain English later. Technologies Used: • Python • re • spacy (NER models) .5",
+    "type": "Termination",
+    "terms": {
+      "arbitration": "A method of resolving disputes outside the courts.",
+      "jurisdiction": "The official power to make legal decisions and judgments."
+    },
+    "simple": "3.4 Legal Term Recognition Module Objective: Identify and highlight important legal terms or jargon inside each clause. Beschreibung: This module works at the word or phrase level, detecting specific legal terminology within the contract. Description: This module works at the word or phrase level, detecting specific legal terminology within the contract. It can be implemented in two ways: 1. Using Pretrained Models (spaCy) – Detects entities automatically (e.g., \"Arbitration,\" \"Jurisdiction\"). 2. Custom Legal Dictionary – Uses pattern matching and regex to locate pre-defined legal terms and provide their meanings. Dieser Feature ist entscheidend für die Vereinfachung und Erklärung von Verträgen in englischer Sprache später. Technologies Used: • Python • re • spacy (NER models) .5"
+  },
+  {
+    "index": 12,
+    "raw": "3.5 Language Simplification Module Objective: Simplify complex legal clauses into plain, easily understandable English. Description: This module transforms complex legal text into simplified versions while preserving meaning and legal intent. It uses transformer-based text generation models such as PEGASUS or BART, accessed via the transformers pipeline. Each clause is simplified sentence by sentence using the \"text2text-generation\" pipeline, producing concise and legally accurate paraphrases. Technologies Used: • transformers • torch • nltk (for sentence splitting) Model Used: tuner007/pegasus_paraphrase Example Output: Original: \"The Lessee shall indemnify and hold harmless the Lessor from any liability arising out of the use of the premises.\" Simplified: \"The tenant must protect the owner from any losses caused by using the property.\" 4. Software Requirements Python 3.10+ : Programming Language PyMuPDF : Extract text from PDF python-docx : Extract text from DOCX re : Text cleaning and regex pattern matching nltk : Sentence tokenization spacy : Named Entity Recognition torch : Deep learning model support transformers : Load and run pretrained NLP models scikit-learn : Evaluation and data handling numpy : Numerical operations 5. Conclusion ClauseEase successfully integrates multiple natural language processing modules to automate the understanding and simplification of legal contracts. From text extraction to clause classification and simplification, each module plays a crucial role in transforming dense legal content into readable, structured, and accurate text. The project demonstrates how AI and NLP can bridge the gap between legal complexity and human comprehension, ultimately empowering users to interpret contracts confidently without requiring legal expertise. Future improvements can include adding more clause categories, fine-tuning simplification models, and enhancing glossary-based contextual linking for better interpretability.",
+    "cleaned": "3.5 Language Simplification Module Objective: Simplify complex legal clauses into plain, easily understandable English. Description: This module transforms complex legal text into simplified versions while preserving meaning and legal intent. It uses transformer-based text generation models such as PEGASUS or BART, accessed via the transformers pipeline. Each clause is simplified sentence by sentence using the \"text2text-generation\" pipeline, producing concise and legally accurate paraphrases. Technologies Used: • transformers • torch • nltk (for sentence splitting) Model Used: tuner007/pegasus_paraphrase Example Output: Original: \"The Lessee shall indemnify and hold harmless the Lessor from any liability arising out of the use of the premises.\" Simplified: \"The tenant must protect the owner from any losses caused by using the property.\" 4. Software Requirements Python 3.10+ : Programming Language PyMuPDF : Extract text from PDF python-docx : Extract text from DOCX re : Text cleaning and regex pattern matching nltk : Sentence tokenization spacy : Named Entity Recognition torch : Deep learning model support transformers : Load and run pretrained NLP models scikit-learn : Evaluation and data handling numpy : Numerical operations 5. Conclusion ClauseEase successfully integrates multiple natural language processing modules to automate the understanding and simplification of legal contracts. From text extraction to clause classification and simplification, each module plays a crucial role in transforming dense legal content into readable, structured, and accurate text. The project demonstrates how AI and NLP can bridge the gap between legal complexity and human comprehension, ultimately empowering users to interpret contracts confidently without requiring legal expertise. Future improvements can include adding more clause categories, fine-tuning simplification models, and enhancing glossary-based contextual linking for better interpretability.",
+    "type": "Governing Law",
+    "terms": {
+      "liability": "Legal responsibility for one’s acts or omissions."
+    },
+    "simple": "3.5 Language Simplification Module Objective: Simplify complex legal clauses into plain, easily understandable English. Description: This module transforms complex legal text into simplified versions while preserving meaning and legal intent. It uses transformer-based text generation models such as PEGASUS or BART, accessed via the transformers pipeline. is simplified sentence by sentence using the \"text2text-generation\" pipeline, producing concise and legally accurate paraphrases. Beispiel Output: Original: \"The Lessee shall indemnify and hold harmless the Lessor from any liability arising out of the use of the premises.\" Simplified: \"The tenant must protect the owner against any losses caused by using the property.\" 4. : Sentence tokenization spacy : Named Entity Recognition torch : Deep learning model support transformers : Load and run pretrained NLP models scikit-learn : Evaluation and data handling numpy : Numerical operations 5. ClauseEase has successfully integrated multiple natural language processing modules to automate the understanding and simplification of legal contracts. Von der Textextraktion bis hin zur Klassifizierung und Vereinfachung von Klauseln, jedes Modul spielt eine entscheidende Rolle in der Transformation komplexer juristischer Inhalte in verständliche, strukturierte und genaue Texte. demonstrates how AI and NLP can bridge the gap between legal complexity and human comprehension, empowering users to interpret contracts confidently without requiring legal expertise. Future improvements can include adding more clause categories, fine-tuning simplification models and enhancing glossary-based contextual linking for better interpretability."
+  }
+]

@@ -1,0 +1,862 @@
+{% extends 'layout.html' %}
+{% block content %}
+<style>
+  .dashboard-container {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+  }
+  
+  .row {
+    animation: fadeIn 0.8s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+      0 20px 60px rgba(0, 0, 0, 0.25),
+      0 0 80px rgba(102, 126, 234, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #5b8def, #a25bfa, #ff80ff);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    z-index: 2;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 
+      0 25px 70px rgba(0, 0, 0, 0.3),
+      0 0 100px rgba(102, 126, 234, 0.15);
+  }
+  
+  .card h5 {
+    font-family: 'Poppins', sans-serif;
+    color: #1a202c;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 0.75rem;
+  }
+  
+  .card h5::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+  }
+  
+  .card h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #1a202c;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 0.75rem;
+  }
+  
+  .card h6::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-control-file {
+    font-family: 'Poppins', sans-serif;
+    border: 3px dashed #667eea;
+    border-radius: 16px;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    font-size: 0.95rem;
+    color: #4a5568;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+  }
+  
+  .form-control-file:hover {
+    border-color: #764ba2;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+  }
+  
+  .form-control-file::before {
+    content: '📄';
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn-success {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    border: none;
+    border-radius: 14px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(17, 153, 142, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-success::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+  }
+  
+  .btn-success:hover::before {
+    left: 100%;
+  }
+  
+  .btn-success:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(17, 153, 142, 0.6);
+    background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+  }
+  
+  .btn-success:active {
+    transform: translateY(-1px);
+  }
+
+  .btn-primary {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 14px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.6);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  }
+  
+  .list-unstyled {
+    padding-left: 0;
+  }
+  
+  .list-unstyled li {
+    font-family: 'Poppins', sans-serif;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+    border-radius: 14px;
+    border-left: 5px solid #667eea;
+    color: #2d3748;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    font-size: 0.95rem;
+  }
+  
+  .list-unstyled li::before {
+    position: absolute;
+    right: 20px;
+    color: #667eea;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .list-unstyled li:hover {
+    transform: translateX(8px);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+    border-left-color: #764ba2;
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+  }
+  
+  .list-unstyled li:hover::before {
+    opacity: 1;
+  }
+  
+  .result-block {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+    border: 2px solid rgba(102, 126, 234, 0.2) !important;
+    border-radius: 18px !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideIn 0.6s ease-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .result-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .result-block:hover {
+    border-color: #667eea !important;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.12) 0%, rgba(118, 75, 162, 0.12) 100%);
+    transform: scale(1.01);
+    box-shadow: 0 10px 35px rgba(102, 126, 234, 0.15);
+  }
+  
+  .result-block h6 {
+    color: #1a202c;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid rgba(102, 126, 234, 0.15);
+    letter-spacing: -0.3px;
+  }
+  
+  .result-block h6::after {
+    display: none;
+  }
+  
+  .result-block p {
+    font-family: 'Poppins', sans-serif;
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+  }
+  
+  .result-block p strong {
+    color: #667eea;
+    font-weight: 700;
+  }
+  
+  .result-block .small {
+    background: rgba(102, 126, 234, 0.08);
+    padding: 14px 16px;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-style: italic;
+    color: #2d3748;
+  }
+  
+  .result-block ul {
+    margin-top: 0.75rem;
+    padding-left: 1.5rem;
+  }
+  
+  .result-block ul li {
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+    line-height: 1.8;
+    font-size: 0.95rem;
+  }
+  
+  .result-block ul li strong {
+    color: #11998e;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  
+  .result-block ul li em {
+    color: #9f7aea;
+    font-size: 0.85rem;
+    background: rgba(159, 122, 234, 0.1);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-style: normal;
+  }
+
+  .plain-section {
+    padding: 36px 28px;
+    color: #eef2ff;
+    max-width: 1100px;
+  }
+
+  .plain-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #ffffff;
+  }
+
+  .plain-section .subtitle {
+    display: block;
+    height: 6px;
+    width: 70px;
+    margin: 10px 0 18px 0;
+    background: linear-gradient(90deg,#7b9bff,#c37bff);
+    border-radius: 6px;
+  }
+
+  .plain-section p.lead {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.92);
+    line-height: 1.8;
+    margin-bottom: 18px;
+    max-width: 1000px;
+  }
+
+  .plain-section ul, .plain-section ol {
+    margin-left: 1.25rem;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.8;
+  }
+
+  .plain-section p.small-note {
+    margin-top: 22px;
+    color: rgba(255,255,255,0.75);
+    font-style: italic;
+  }
+
+  .dashboard-header h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
+    align-self: center;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  }
+  
+  .card p a {
+    color: #667eea;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+  }
+  
+  .card p a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+  }
+  
+  .card > p {
+    font-family: 'Poppins', sans-serif;
+    color: #2d3748;
+    font-size: 0.95rem;
+    padding: 14px 18px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+    margin-bottom: 1.5rem;
+  }
+  
+  .mb-3 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .col-md-4 .card:first-child {
+    animation: fadeIn 0.8s ease-out, cardPulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes cardPulse {
+    0%, 100% {
+      box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.25),
+        0 0 80px rgba(102, 126, 234, 0.1);
+    }
+    50% {
+      box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.25),
+        0 0 100px rgba(102, 126, 234, 0.2);
+    }
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  }
+
+  /* Fix for tab content to prevent scrolling issues */
+  .tab-pane {
+    display: none;
+  }
+
+  .tab-pane.active {
+    display: block;
+  }
+
+  /* Feature list styling for home page */
+  .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border-left: 4px solid;
+    transition: all 0.3s ease;
+  }
+
+  .feature-item:nth-child(1) { border-left-color: #ffc107; }
+  .feature-item:nth-child(2) { border-left-color: #17a2b8; }
+  .feature-item:nth-child(3) { border-left-color: #28a745; }
+  .feature-item:nth-child(4) { border-left-color: #667eea; }
+
+  .feature-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(8px);
+  }
+
+  .feature-item i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    min-width: 30px;
+  }
+
+  .feature-item span {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 1.5rem;
+    }
+    
+    .card h5, .card h6 {
+      font-size: 1.25rem;
+    }
+
+    .dashboard-header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .dashboard-header img {
+      margin: 0 0 1rem 0 !important;
+    }
+  }
+
+  /* Processing overlay (shown while analysis runs) */
+  .processing-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 200ms ease;
+  }
+
+  .processing-overlay.show {
+    display: flex;
+  }
+
+  .processing-box {
+    background: #ffffff;
+    color: #1a202c;
+    padding: 22px 28px;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    min-width: 260px;
+  }
+
+  .spinner {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 4px solid rgba(0,0,0,0.08);
+    border-top-color: #667eea;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .processing-text { font-weight: 700; }
+</style>
+
+
+
+<div class="dashboard-container mt-4">
+  <!-- Processing overlay (appears while server is analyzing upload) -->
+  <div id="processingOverlay" class="processing-overlay" aria-hidden="true" role="status" aria-live="polite">
+    <div class="processing-box">
+      <div class="spinner" aria-hidden="true"></div>
+      <div class="processing-text">Analysing your document</div>
+    </div>
+  </div>
+
+  <!-- Logout Button - Fixed Position -->
+  <div style="position: fixed; top: 115px; right: 1px; z-index: 1000; display: flex; align-items: center; gap: 8px;">
+  {% if session.get('role') == 'admin' %}
+    <a href="{{ url_for('admin_panel') }}" class="btn btn-secondary" style="font-size:0.85rem; padding:8px 12px;">
+      Admin Panel
+    </a>
+  {% endif %}
+  <a href="{{ url_for('logout') }}" class="btn btn-primary" style="font-size: 0.9rem; padding: 8px 10px;">
+    <i class="fas fa-sign-out-alt mr-2"></i>Logout
+  </a>
+</div>
+
+
+
+  <!-- Header Section - Always Visible -->
+  <div class="dashboard-header d-flex align-items-center mb-5 p-3 rounded-xl shadow-sm"
+     style="max-width: 1100px; margin:1 auto;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 16px;">
+    {% if logo_filename %}
+      <img src="{{ url_for('uploaded_file', filename=logo_filename) }}" 
+           alt="ClauseEase Logo" 
+           style="height:60px;width:60px;border-radius:14px;margin-right:18px;object-fit:cover;box-shadow:0 0 20px rgba(255,255,255,0.08);">
+    {% endif %}
+    
+    <div>
+      <h3 class="mb-1" style="color:#fff; font-weight:600; letter-spacing:-0.3px;">Transforming Legal Documents through Intelligent Automation</h3>
+      <p class="text-muted mb-0" style="font-size:0.90rem; color: #fff">Simplifying complex legalese into human-friendly language.</p>
+    </div>
+  </div>
+
+    <!-- Tab Content -->
+  <div class="tab-content" id="dashboardTabsContent">
+    <!-- Home tab -->
+    <div class="tab-pane fade {% if not active_tab or active_tab == 'home' %}show active{% endif %}" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <section class="plain-section mb-5 p-4 p-md-5"
+               style="background: rgba(255,255,255,0.03); border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(12px); box-shadow: 0 8px 30px rgba(0,0,0,0.25);">
+        <h2 style="color:#fff; font-weight:600; margin-bottom:1rem;">Welcome to <span style="color:#d0d3ff;">ClauseEase</span></h2>
+        <p class="lead" style="color:#cfd2f0; line-height:1.7;">
+          ClauseEase is a lightweight, intelligent web application that ingests contracts and other legal documents, 
+          automatically detects clauses, recognizes key legal terms, and provides plain-English simplifications.
+        </p>
+        <p style="color:#b5b9e3;">Supported formats: <strong>PDF</strong>, <strong>DOCX</strong>, and <strong>TXT</strong>.</p>
+
+        <div class="features mt-4">
+          <h4 style="color:#fff; font-weight:500; margin-bottom:1rem;">Key Features</h4>
+          <ul class="feature-list">
+            <li class="feature-item">
+              <i class="fas fa-file-import text-warning"></i>
+              <span>Document ingestion and preprocessing for accurate parsing</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-layer-group text-info"></i>
+              <span>Automated clause detection and classification</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-scale-balanced text-success"></i>
+              <span>Legal term recognition with concise explanations</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-language text-primary"></i>
+              <span>Language simplification for non-legal readers</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="note mt-4 p-3 rounded-lg" 
+             style="background: rgba(255,255,255,0.05); border-left: 4px solid #ffc107; color: #f1eac0; font-size:0.95rem;">
+          <i class="fas fa-lightbulb mr-2 text-warning"></i>
+          Tip: You can view results instantly on the same page — just head to the <strong>Upload</strong> tab to get started.
+        </div>
+      </section>
+    </div>
+
+    <!-- About tab -->
+    <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+      <section class="plain-section mb-4">
+        <h2>About ClauseEase</h2>
+        <span class="subtitle"></span>
+        <p class="lead">
+          <strong>ClauseEase</strong> is designed to simplify the complex world of legal documents. 
+          By blending intelligent rule-based parsing with machine learning insights, it helps users rapidly identify 
+          critical clauses, legal terms, and obligations — translating legal jargon into clear, plain English.
+        </p>
+
+        <p>
+          The goal of ClauseEase is to empower <strong>lawyers, legal researchers, startups, and business professionals</strong> 
+          to review contracts efficiently and make informed decisions without getting lost in dense legal text.
+        </p>
+
+        <h5 class="mt-4" style="color:#fff; font-weight:500;">How It Works:</h5>
+        <ol>
+          <li><strong>Upload your document</strong> — supported formats include PDF, DOCX, and plain text.</li>
+          <li><strong>Automated text extraction</strong> — the system preprocesses the file and segments it into clauses.</li>
+          <li><strong>Intelligent analysis</strong> — each clause is categorized and scanned for legal terminology.</li>
+          <li><strong>Readable output</strong> — you'll see the original clause, identified legal terms, and a simplified explanation side by side.</li>
+        </ol>
+
+        <p class="mt-3">
+          ClauseEase runs on a <strong>Flask-based backend</strong> with modular design principles — 
+          making it easy to extend, integrate, and enhance. The current demo showcases how legal-tech automation 
+          can make contracts more transparent and user-friendly.
+        </p>
+
+        <p class="small-note mb-0">
+          Explore the source code in the project root for implementation details, or check out the Upload tab to try it in action.
+        </p>
+      </section>
+    </div>
+
+    <!-- Upload tab -->
+    <div class="tab-pane fade {% if active_tab == 'upload' %}show active{% endif %}" id="upload" role="tabpanel" aria-labelledby="upload-tab">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card p-3 mb-3">
+            <h5>Upload Document</h5>
+            <form id="uploadForm" method="post" enctype="multipart/form-data">
+              <div class="form-group">
+                <input type="file" name="document" class="form-control-file" required>
+              </div>
+              <div class="form-group mb-3">
+                <label for="simp_level" style="font-weight:600; display:block; margin-bottom:6px;">Simplification level</label>
+                <select name="simp_level" id="simp_level" class="form-control" style="border-radius:10px; height:50px; padding:0 10px;">
+                  <option value="Basic">Basic paraphrase</option>
+                  <option value="Intermediate" selected>Intermediate (balanced)</option>
+                  <option value="Advanced">Advanced (strong paraphrase)</option>
+                </select>
+              </div>
+              <button id="uploadBtn" type="submit" class="btn btn-success btn-block">
+                <i class="fas fa-cloud-upload-alt mr-2"></i>Upload & Analyze
+              </button>
+            </form>
+            {% if uploaded %}
+            <div style="margin-top:12px;">
+              <a class="btn btn-primary btn-block" href="{{ url_for('download_results') }}?filename={{ uploaded.name }}">
+                <i class="fas fa-file-download mr-2"></i>Download Results PDF
+              </a>
+            </div>
+            {% endif %}
+          </div>
+
+          <div class="card p-3">
+            <h6>Pipeline Modules</h6>
+            <ul class="list-unstyled">
+              <li>1. Document Ingestion</li>
+              <li>2. Preprocessing</li>
+              <li>3. Clause Detection</li>
+              <li>4. Legal Term Recognition</li>
+              <li>5. Language Simplification</li>
+            </ul>
+          </div>
+
+          {% if results %}
+          <div class="card p-3 mt-3">
+            <h6>Analysis Summary</h6>
+            <p class="mb-2">Unique clauses detected: <strong>{{ clause_count }}</strong></p>
+            <p class="mb-0">Unique legal terms recognized: <strong>{{ term_count }}</strong></p>
+          </div>
+
+          <!-- Side visuals: stacked vertical charts shown in left column -->
+          <div class="card p-3 mt-3" id="side-visuals">
+            <h6>Quick Visuals</h6>
+            {% if clause_chart %}
+              <div class="mb-3 text-center">
+                <p class="small" style="color: black; font-weight:600; margin-bottom:8px;">Clause Length distribution</p>
+                <img src="{{ url_for('uploaded_file', filename=clause_chart) }}" alt="Clause distribution" class="img-fluid rounded" style="width:100%; max-height:320px; object-fit:contain;">
+              </div>
+            {% endif %}
+
+            {% if term_chart %}
+              <div class="mb-3 text-center">
+                <p class="small" style="color: black; font-weight:600; margin-bottom:8px;">Top legal terms</p>
+                <img src="{{ url_for('uploaded_file', filename=term_chart) }}" alt="Top terms" class="img-fluid rounded" style="width:100%; max-height:320px; object-fit:contain;">
+              </div>
+            {% endif %}
+
+            {% if readability_chart %}
+              <div class="mb-0 text-center">
+                <p class="small" style="color: black; font-weight:600; margin-bottom:8px;">Readability impact</p>
+                <img src="{{ url_for('uploaded_file', filename=readability_chart) }}" alt="Readability" class="img-fluid rounded" style="width:100%; max-height:320px; object-fit:contain;">
+              </div>
+            {% endif %}
+
+            {% if not (clause_chart or term_chart or readability_chart) %}
+              <p class="small text-muted mb-0">No visuals available yet. Upload a document to generate charts.</p>
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+
+        <div class="col-md-8">
+          <div class="card p-3 mb-3">
+            <h5>Analysis Results</h5>
+            {% if results %}
+            {% endif %}
+            {% if uploaded %}
+              <p><strong>Uploaded:</strong> <a href="{{ url_for('uploaded_file', filename=uploaded.name) }}">{{ uploaded.name }}</a></p>
+              {% if simp_level %}
+                <p class="small" style="color:#000000;">Simplification level: <strong>{{ simp_level }}</strong></p>
+              {% endif %}
+            {% endif %}
+
+
+
+            {% if results %}
+              {% for r in results %}
+                <div class="result-block mb-3 p-3 border rounded">
+                  <h6>Clause {{ r.index }} - {{ r.type }}</h6>
+                  <p class="small">{{ r.cleaned }}</p>
+                  <p><strong>Terms:</strong>
+                  {% if r.terms %}
+                    <ul>
+                      {% for t, info in r.terms.items() %}
+                        <li><strong>{{ t }}</strong>: {{ info.definition if info.definition else info }} <em>({{ info.method }})</em></li>
+                      {% endfor %}
+                    </ul>
+                  {% else %}
+                    No legal terms recognized.
+                  {% endif %}
+                  </p>
+                  <p><strong>Simplified:</strong> {{ r.simple }}</p>
+                </div>
+              {% endfor %}
+            {% else %}
+              <p>No analysis yet. Upload a document to see results.</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- History tab -->
+    <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+      <div class="row">
+        <div class="col-12">
+          <div class="card p-3 mb-3">
+            <h5>Your Analysis History</h5>
+            {% if history and history|length > 0 %}
+              <ul class="list-unstyled">
+                {% for h in history %}
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <strong>{{ h.filename }}</strong>
+                      <div class="small text-muted">{{ h.uploaded_at }}</div>
+                    </div>
+                    <div>
+                      <a class="btn btn-sm btn-success mr-2" href="{{ url_for('download_analysis', analysis_id=h.id) }}">Download PDF</a>
+                      <a class="btn btn-sm btn-secondary" href="{{ url_for('download_analysis_json', analysis_id=h.id) }}">Download JSON</a>
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <p>No previous analyses found. Upload a document to create one.</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Show processing overlay when upload form is submitted
+    (function(){
+      const form = document.getElementById('uploadForm');
+      const overlay = document.getElementById('processingOverlay');
+      const uploadBtn = document.getElementById('uploadBtn');
+      if (form && overlay) {
+        form.addEventListener('submit', function() {
+          overlay.classList.add('show');
+          overlay.setAttribute('aria-hidden', 'false');
+          // disable submit button to prevent duplicate submits
+          if (uploadBtn) uploadBtn.disabled = true;
+        });
+      }
+    })();
+  </script>
+</div>
+{% endblock %}
