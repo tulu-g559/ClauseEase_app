@@ -151,14 +151,6 @@ The core intelligence of ClauseEase is built upon the following specific models 
 
 ---
 
-## 👥 Team (Group 1)
-**Submitted to Infosys SpringBoard Virtual Internship 6.0**
-
-* **Arnab Ghosh**
-* **Amit Badoni**
-* **Abhisek Nayak**
-* **Adepo Santhoshi Rupa**
-
 **Mentor:** Dr. A. Kalaivani
 
 ---
