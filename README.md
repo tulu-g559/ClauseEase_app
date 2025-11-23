@@ -1,5 +1,5 @@
 # ClauseEase: AI-Based Contract Language Simplifier
-
+ 
 > **"Clear Contracts. Confident Decisions."**
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success)
