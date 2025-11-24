@@ -95,7 +95,7 @@ The core intelligence of ClauseEase is built upon the following specific models 
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/tulu-g559/ClauseEase.git
+    git clone https://github.com/tulu-g559/ClauseEase_app.git
     ```
 
 2.  **Create a Virtual Environment**
